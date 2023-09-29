@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+
+
+.horizontal-card-slider2 {
+  @media (max-width: 640px) {  display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    gap: 20px;
+    cursor: grab;
+    user-select: none;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none; }
+   
+  }
+
+  .horizontal-card-slider1 {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  
+      gap: 20px;
+      cursor: grab;
+      user-select: none;
+      width: 100%;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      scrollbar-width: none; 
+     
+    }
+  
+  .hideScrollbar::-webkit-scrollbar .horizontal-card-slider::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .card {
+    flex: 0 0 auto;
+
+    
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+
+
+button.bombaa {
+  background: #0576CB;
+  color: #fff;
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+button.bombaa:hover {
+  color: #fff;
+    background: #EE6123;
+  transition: all 1s ease;
+
+}
+button.bombaa::after {
+  content: "";
+  background: #EE6123;
+  position: absolute;
+  z-index: -1;
+  display: block;
+  border-radius: 100%;
+  left: 0;
+  right: 0;
+  top:-100%;
+  bottom: 0;
+  transform: scale(0, 0);
+
+  transition: all 0.5s ease;
+  background-color: #EE6123;
+}
+
+
+button.bombaa:hover::after {
+  transition: all 0.5s ease;
+  transform: scale(1, 1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+  
